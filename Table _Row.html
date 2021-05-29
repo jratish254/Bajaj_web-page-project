@@ -1,0 +1,79 @@
+    <html>
+     <head>
+       <style>
+
+         table,th,td{
+
+           border: 1px solid black;
+           border-collapse: collapse;
+         }
+       </style>
+     </head>
+
+     <body>
+       <div id="parent_Div"></div>
+    
+    <script>
+       let studentDetails=[
+         
+       {
+         name:"mohan",
+         age:23,
+         address:"saharsa",
+       },
+
+       {
+        name:"sohan",
+         age:37,
+         address:"kahara",
+
+       },
+       {
+
+        name:"amresh",
+         age:29,
+         address:"batraha",
+       },
+       {
+
+        name:"shyam",
+         age:23,
+         address:"maitahon",
+       }
+
+         ]
+           let tempData= "";
+         for(let i=0;i<=studentDetails.length-1;i++){
+
+              tempData=tempData + `<tr> 
+            <td>`+studentDetails[i].name+`</td>
+            <td>`+studentDetails[i].age+`</td>
+            <td>`+studentDetails[i].address+`</td>
+          
+            </tr>`
+          }
+
+           document.getElementById("parent_Div").innerHTML=`<table>`+
+
+         `<tr>
+          
+          <th>name</th>
+          <th>age</th>
+          <th>address</th>
+        
+          </tr>`+
+          tempData
+          
+
+          +
+
+        
+    
+           `</table>`
+
+
+                 </script>
+               </body>
+
+
+</html>
